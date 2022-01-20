@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    style="@style/CardView.Light"
+    app:cardCornerRadius="8dp"
+    android:elevation="3dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prostavki_bg" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="65dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="250dp"
+        android:text="1X on home outsiders"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal"
+            android:text="More" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="63dp"
+        android:layout_height="88dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/favBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_baseline_favorite_24" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
